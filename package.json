@@ -1,0 +1,15 @@
+{
+  "name": "dollar",
+  "version": "1.0.0",
+  "description": "Dollar The Dog - Currency Watcher",
+  "main": "dollar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Lebtag <brlebtag@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-notifier": "^4.5.0",
+    "request": "^2.70.0"
+  }
+}
