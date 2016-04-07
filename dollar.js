@@ -5,7 +5,7 @@
 const request = require('request');
 const notifier = require('node-notifier');
 const path = require('path');
-const VERSION = "1.0.0";
+const VERSION = "1.0.1";
 var prev_exchange = undefined;
 
 /* ------------------------------------------------------------------------ *
@@ -248,7 +248,7 @@ function proccess_request(value, from, to)
  {
     var args = parseArgs();
 
-    if( empty_obj(args) || is_defined(args['-v']) )
+    if( empty_obj(args) || is_defined(args['-h']) )
     {
         help();
         return;
@@ -257,6 +257,7 @@ function proccess_request(value, from, to)
     if(is_defined(args['-v']))
     {
         version();
+        return;
     }
 
     var value = args['-e'];
